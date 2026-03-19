@@ -1,0 +1,123 @@
+/* register.css */
+
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e8eae3;
+  }
+  
+  .title {
+    text-align: center;
+    color: #fa2742;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #fa2742;
+  }
+  
+  .create-button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px auto 0 auto;
+    background-color: #fa2742;
+    border: none;
+  }
+  
+  .login-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .login-link {
+    color: #fa2742;
+    border: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For screens smaller than 768px (Tablets and small screens) */
+  @media (max-width: 768px) {
+    .register-container {
+        padding: 15px;
+    }
+  
+    .title {
+        font-size: 26px;
+    }
+  
+    .create-button {
+        width: 80%;
+    }
+  
+    .login-text {
+        font-size: 14px;
+    }
+  
+    .login-link {
+        font-size: 14px;
+    }
+  }
+  
+  /* For screens smaller than 480px (Mobile devices) */
+  @media (max-width: 480px) {
+    .register-container {
+        padding: 10px;
+    }
+  
+    .title {
+        font-size: 22px;
+    }
+  
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+  
+    .create-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 12px;
+    }
+  
+    .login-text {
+        font-size: 12px;
+    }
+  
+    .login-link {
+        font-size: 12px;
+    }
+
+  }
+  

@@ -1,0 +1,120 @@
+.category-dashboard-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2.5rem 3rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.category-dashboard-container:hover {
+  transform: translateY(-3px);
+}
+
+.form-title {
+  color: #fa2742;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.category-dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  columns: grid;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Flexbox setup for two inputs per row */
+.form-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px; /* Ensure that the inputs wrap on small screens */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #fa2742;
+  box-shadow: 0 0 0 3px rgba(250, 39, 66, 0.15);
+  outline: none;
+}
+
+.btn{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.cancel-button button{
+  padding: 10px 30px;
+  background-color: #e8eae3;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.save-button button {
+  padding: 10px 30px;
+  background-color: #fa2742;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cancel-button button,
+  .save-button button {
+    width: 100%;
+  }
+
+  /* Stack the inputs on smaller screens */
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}

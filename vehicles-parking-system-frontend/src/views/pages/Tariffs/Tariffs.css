@@ -1,0 +1,85 @@
+.roles-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.title {
+  color: #fa2742;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.roles-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.cancel-button button {
+  padding: 10px 30px;
+  background-color: #e8eae3;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.cancel-button button:hover {
+  background-color: #d4d6d0;
+}
+
+.save-button button {
+  padding: 10px 30px;
+  background-color: #fa2742;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-button button:hover {
+  background-color: #d81c34;
+}

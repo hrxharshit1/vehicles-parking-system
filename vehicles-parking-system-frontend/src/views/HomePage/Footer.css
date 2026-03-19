@@ -1,0 +1,122 @@
+/* Basic footer styling */
+.footer {
+    background-color: #e8eae3   ;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+  }
+  /* Footer.css */
+
+.footer {
+  background-color: #fa2742; /* Deep blue */
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  color: #f1faee; /* Very light white-blue */
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.company-name {
+  font-weight: bold;
+  color: black; /* Light teal for company name */
+}
+
+/* Hover effect for future additions */
+.footer-text:hover {
+  color: #ffd166;
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 0.85rem;
+    padding: 0 15px;
+  }
+}
+
+  
+  .footer .footer-line p {
+    margin-top: 30px;
+    margin-bottom: -15px;
+    color: #fa2742;
+    font-size: large;
+    font-weight: bold;
+ }
+  
+ /* Responsive Design for Footer */
+
+/* Tablets and Medium Devices */
+@media (max-width: 991px) {
+  .footer-text {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+
+  .footer-line p {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    padding: 0 15px;
+  }
+
+  .footer-line p {
+    font-size: 0.95rem;
+    margin-top: 15px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .company-name {
+    font-size: 0.9rem;
+  }
+
+  .footer-line p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 350px) {
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .company-name {
+    font-size: 0.8rem;
+  }
+
+  .footer-line p {
+    font-size: 0.8rem;
+  }
+}

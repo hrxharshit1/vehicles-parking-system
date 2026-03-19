@@ -1,0 +1,123 @@
+.category-dashboard-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.category-dashboard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+  color: #fa2742;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fa2742;
+  padding-bottom: 0.5rem;
+}
+
+.category-dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #fa2742;
+  box-shadow: 0 0 8px rgba(250, 39, 66, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.cancel-button button {
+  padding: 10px 30px;
+  background-color: #e8eae3;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.save-button button {
+  padding: 10px 30px;
+  background-color: #fa2742;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .category-dashboard-container {
+    padding: 2rem;
+  }
+
+  .category-dashboard-form {
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cancel-button button,
+  .save-button button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

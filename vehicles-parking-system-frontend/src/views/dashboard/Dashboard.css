@@ -1,0 +1,54 @@
+/* ParkingTable.css or Dashboard.css */
+
+.custom-parking-table {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.custom-parking-table thead {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.custom-parking-table th,
+.custom-parking-table td {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #495057;
+  vertical-align: middle;
+}
+
+.custom-parking-table tbody tr:hover {
+  background-color: #f1f3f5;
+  transition: background-color 0.2s ease;
+}
+
+.custom-parking-table tbody td {
+  border-top: 1px solid #dee2e6;
+}
+
+.custom-status {
+  font-weight: bold;
+}
+
+.custom-status.active {
+  color: #2ecc71;
+}
+
+.custom-status.inactive {
+  color: #e74c3c;
+}
+
+.search-input {
+  max-width: 100%;
+}
+
+.exit-button {
+  font-weight: bold;
+  padding: 6px 16px;
+}

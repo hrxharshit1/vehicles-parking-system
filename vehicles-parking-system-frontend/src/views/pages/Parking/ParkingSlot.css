@@ -1,0 +1,214 @@
+/* ParkingList.css */
+
+.parking-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.parking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid #dcdcdc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.parking-section:hover {
+  transform: scale(1.01);
+}
+
+.parking-row {
+  display: flex;
+  gap: 8px;
+}
+
+.parking-row div {
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parking-row div:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Color codes */
+.green {
+  background-color: #4caf50; /* Available */
+  color: white;
+}
+
+.yellow {
+  background-color: #ffc107; /* Moderate */
+  color: #333;
+}
+
+.default {
+  background-color: #e0e0e0; /* Unavailable */
+  color: #666;
+}
+
+.selected {
+  outline: 3px solid #2196f3;
+  box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.popup-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-ok,
+.popup-cancel {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-ok {
+  background-color: #28a745;
+  color: white;
+}
+
+.popup-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+.slot {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background-color: #f9f9f9;
+}
+
+.slot.default {
+  border: 2px solid #ccc;
+}
+
+.slot.green {
+  border: 2px solid green;
+}
+
+.slot.yellow {
+  border: 2px solid orange;
+  background-color: #fff3cd;
+}
+
+.slot:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.slot.selected {
+  background-color: green !important;
+  color: white;
+  border-color: darkgreen;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .parking-row div {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .parking-section {
+    padding: 12px;
+  }
+}
+
+.pink {
+  background-color: green;
+}
+
+.white {
+  background-color: white;
+}
+
+.empty {
+  background-color: lightgray;
+}
+
+.selected {
+  border: 2px solid blue;
+}
+
+.white {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  user-select: none;
+}
+
+.pink {
+  background-color: #f9c2d0;
+  border: 1px solid #f084a3;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  user-select: none;
+}
+
+.selected {
+  border: 2px solid #007bff;
+  background-color: #e0f0ff;
+}
+
+.disabled {
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}

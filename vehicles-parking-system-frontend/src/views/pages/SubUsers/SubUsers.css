@@ -1,0 +1,197 @@
+/* register.css */
+
+.register-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e8eae3;
+  
+  }
+  .checkbox-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s;
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked {
+    background-color: #fa2742;
+    border-color: #fa2742;
+  }
+  
+  .checkbox-group input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked::after {
+    opacity: 1;
+  }
+  
+  .checkbox-group {
+    margin-top:1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #e8eae3;
+    border:none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: background 0.2s, border 0.2s;
+    cursor: pointer;
+  }
+  
+  .checkbox-group label:hover {
+    background-color: #eef4ff;
+    border-color: #fa2742;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .title {
+    text-align: center;
+    color: #fa2742;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #fa2742;
+  }
+  .btn{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .cancel-button button{
+    padding: 10px 30px;
+    background-color: #b8bab3;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .save-button button {
+    padding: 10px 30px;
+    background-color: #fa2742;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For screens smaller than 768px (Tablets and small screens) */
+  @media (max-width: 768px) {
+    .register-container {
+        padding: 15px;
+    }
+  
+    .title {
+        font-size: 26px;
+    }
+  
+    .create-button {
+        width: 80%;
+    }
+  
+    .login-text {
+        font-size: 14px;
+    }
+  
+    .login-link {
+        font-size: 14px;
+    }
+  }
+  
+  /* For screens smaller than 480px (Mobile devices) */
+  @media (max-width: 480px) {
+    .register-container {
+        padding: 10px;
+    }
+  
+    .title {
+        font-size: 22px;
+    }
+  
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+  
+    .create-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 12px;
+    }
+  
+    .login-text {
+        font-size: 12px;
+    }
+  
+    .login-link {
+        font-size: 12px;
+    }
+  }
+  
